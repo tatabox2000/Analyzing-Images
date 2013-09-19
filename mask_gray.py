@@ -78,9 +78,9 @@ def main():
 	plt.title('Blue histgram of the defect')
 	plt.subplot(4,3,10),plt.hist(im_lab[:,:,0].flatten(),bins=100,color='c'),plt.xlim(1,255),plt.ylim(0,500)
 	plt.title('L* histgram of the defect')
-	plt.subplot(4,3,11),plt.hist(im_lab[:,:,1].flatten(),bins=100,color='m'),plt.xlim(1,255),plt.ylim(0,500)
+	plt.subplot(4,3,11),plt.hist(im_lab[:,:,1].flatten(),bins=80,color='m'),plt.xlim(100,150),plt.ylim(0,500)
 	plt.title('a* histgram of the defect')
-	plt.subplot(4,3,12),plt.hist(im_lab[:,:,2].flatten(),bins=100,color='y'),plt.xlim(1,255),plt.ylim(0,500)
+	plt.subplot(4,3,12),plt.hist(im_lab[:,:,2].flatten(),bins=80,color='y'),plt.xlim(100,130),plt.ylim(0,500)
 	plt.title('b* histgram of the defect')
 
 	plt.show()
