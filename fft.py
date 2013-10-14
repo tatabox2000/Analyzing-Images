@@ -44,9 +44,12 @@ def fft():
 
 
 	np.savetxt("fft.csv",test2,fmt="%.5f",delimiter=",")
-	plt.subplot(1,3,1),plt.plot(t,s)
-	plt.subplot(1,3,2),plt.plot(freq,power),plt.xlim(0,200)
-	plt.subplot(1,3,3),plt.plot(t,main_sig)
+	plt.subplot(1,3,1),plt.plot(t,s,color='b')
+	plt.title("signal")
+	plt.subplot(1,3,2),plt.plot(freq,power,color='g'),plt.xlim(0,200)
+	plt.title("Fourier transform")
+	plt.subplot(1,3,3),plt.plot(t,main_sig,color='r')
+	plt.title("Band-pass filter")
 	plt.show()
 if __name__ == '__main__':
 	fft()
